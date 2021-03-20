@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
-import NavigationBar from 'components/Navbar';
-import Footer from 'components/Footer';
+// import NavigationBar from 'components/Navbar';
+// import Footer from 'components/Footer';
 
 const Home: React.FC = (): ReactElement => {
   return (
