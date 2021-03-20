@@ -5,7 +5,7 @@ import Home from 'views/home';
 describe('App renders successfully', () => {
   it('renders learn react link', () => {
     render(<Home />);
-    const linkElement = screen.getByText(/learn react/i);
+    const linkElement = screen.getByText(/Olúwáségun/i);
     expect(linkElement).toBeInTheDocument();
   });
 });

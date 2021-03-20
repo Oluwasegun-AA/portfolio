@@ -5,7 +5,7 @@ import Footer from 'components/Footer';
 const Home: React.FC = (): ReactElement => {
   return (
     <div className="main_container">
-      <NavigationBar />
+      {/* <NavigationBar /> */}
       <div className="body_container">
         <div className="centered_description">
           <div className="Info">
@@ -14,7 +14,7 @@ const Home: React.FC = (): ReactElement => {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
