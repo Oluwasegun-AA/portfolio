@@ -12,11 +12,46 @@
 
     .name {
         font-family: R-semiBold;
-        font-size: 60px;
     }
 
-    .title{
-        font-size: 20px;
-        margin-top: 20px;
+    .title {
+        font-family: R-regular;
+        margin: 10px;
     }
 }
+
+@include tiny-screen {
+    .title {
+        font-size: 16px;
+    }
+    .name {
+       font-size: 40px;
+    }
+}
+
+@include mobile-screen {
+    .title {
+        font-size: 22px;
+    }
+    .name {
+       font-size: 60px;
+    }
+  }
+
+@include tablet-screen {
+    .title {
+        font-size: 25px;
+    }
+    .name {
+        font-size: 60px;
+     }
+  }
+
+@include desktop-screen {
+    .title {
+        font-size: 25;
+    }
+    .name {
+        font-size: 60px;
+     }
+  }
