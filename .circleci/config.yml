@@ -1,19 +1,9 @@
-orbs:
-  react: 'thefrontside/react@0.2.0'
-version: 2.1
-workflows:
-  push:
-    jobs:
-      - react/install
-      - react/eslint:
-          requires:
-            - react/install
-      - react/stylelint:
-          requires:
-            - react/install
-      - react/test:
-          requires:
-            - react/install
-      - react/coverage:
-          requires:
-            - react/install
+jobs:
+  build:
+    docker:
+      - image: cimg/node:15.11.0
+    steps:
+      - checkout
+      - run: npm i
+      - run: npm run lint
+      - run: npm test
