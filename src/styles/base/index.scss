@@ -1,0 +1,38 @@
+@import '../fonts/fonts.scss';
+@import './variables.scss';
+@import './mixin.scss';
+
+html,
+body,
+#root,
+.routes {
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: $background;
+  font-family: R-regular;
+  overflow: scroll;
+}
+
+.main_container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .body_container{
+    flex-grow: 1;
+    background-color: red;
+    border: 2px solid red;
+    width: 800px;
+  }
+}
+
+.header{
+  height: 50px;
+  border: 1px solid white;
+  width: 100%;
+}
+
+
