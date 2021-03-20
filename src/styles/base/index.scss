@@ -24,6 +24,15 @@ body,
 
   .body_container{
     flex-grow: 1;
-    width: 800px;
+
+    @include mobile-screen {
+      width: $mobile;
+    }
+    @include tablet-screen {
+      width: $tablet;
+    }
+    @include desktop-screen {
+      width: $desktop;
+    }
   }
 }
