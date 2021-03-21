@@ -1,13 +1,49 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.scss';
+import {
+  ApolloProvider,
+  createHttpLink,
+  ApolloClient,
+  from,
+} from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
+import cache from 'apollo/cache';
 import reportWebVitals from './reportWebVitals';
 import Routes from './routes';
+import errorLink from './apollo/errorHandling';
+
+export const baseUrl =
+  process.env.BACKEND_BASE_URL || 'https://backend_staging.herokuapp.com';
+
+const httpLink = createHttpLink({ uri: `${baseUrl}/graphql` });
+
+const authLink = setContext(async (_, { headers }) => {
+  const token = sessionStorage.getItem('userToken');
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  };
+});
+
+const client = new ApolloClient({
+  link: from([authLink, errorLink, httpLink]),
+  cache,
+  defaultOptions: {
+    watchQuery: {
+      fetchPolicy: 'cache-first',
+      errorPolicy: 'none',
+      notifyOnNetworkStatusChange: true,
+    },
+  },
+});
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ApolloProvider client={client}>
     <Routes />
-  </React.StrictMode>,
+  </ApolloProvider>,
   document.getElementById('root'),
 );
 
