@@ -9,14 +9,13 @@ body,
   min-width: 100%;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  min-height: max-content;
   background-color: $background;
   font-family: R-regular;
   overflow: scroll;
 }
 
 .main_container{
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,14 +24,20 @@ body,
   .body_container{
     flex-grow: 1;
 
-    @include mobile-screen {
-      width: $mobile;
+    @include tiny-screen {
+      width: $sm_Mobile;
     }
-    @include tablet-screen {
-      width: $tablet;
+  @include mobile-screen {
+      width: $sm_Mobile;
     }
-    @include desktop-screen {
-      width: $desktop;
+  @include tablet-screen {
+      width: $md_Tablet;
+    }
+  @include desktop-screen {
+      width: $lg_Desktop;
+    }
+  @include large-desktop-screen {
+      width: $xl_Desktop;
     }
   }
 }

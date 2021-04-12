@@ -1,18 +1,38 @@
+@import '../fonts/fonts.scss';
+@import '../base/variables.scss';
+@import '../base/mixin.scss';
+
+.container {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.centered-content {
+    width: $content_width;
+}
+
 .nav,
 .footer{
     height: 50px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
-
-.links {
-    width: 800px;
 }
 
-.left_nav,
-.right_nav,
-.right_footer,
-.left_footer {
-    flex-grow: 0.5;
+.footer_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    img {
+        height: 15px;
+        width: 15px;
+        margin: 15px;
+        opacity: 1;
+    }
+
+    img:hover{
+        opacity: 1;
+    }
 }
