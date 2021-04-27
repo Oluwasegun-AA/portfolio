@@ -16,28 +16,36 @@ body,
 }
 
 .main_container{
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-self: center;
+  text-align: center;
+  justify-content: center;
 
   .body_container{
-    flex-grow: 1;
+    // flex-grow: 1;
+    // height: max-content;
 
     @include tiny-screen {
-      width: $sm_Mobile;
+    width: $content_width;
     }
   @include mobile-screen {
-      width: $sm_Mobile;
-    }
-  @include tablet-screen {
-      width: $md_Tablet;
-    }
-  @include desktop-screen {
-      width: $lg_Desktop;
-    }
-  @include large-desktop-screen {
-      width: $xl_Desktop;
-    }
+  width: $content_width;  
   }
+  @include tablet-screen {
+  width: $content_width;  
+  }
+  @include desktop-screen {
+  width: $content_width;  
+  }
+  @include large-desktop-screen {
+  width: $content_width;  
+  }
+  }
+}
+
+.info {
+    height: max-content;
 }

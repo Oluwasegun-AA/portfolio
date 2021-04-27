@@ -8,7 +8,7 @@ const Home: React.FC = (): ReactElement => {
       <NavigationBar />
       <div className="body_container">
         <div className="centered_description">
-          <div className="Info">
+          <div className="info">
             <div className="name">Olúwáségun</div>
             <div className="title">Software Engineer</div>
           </div>
