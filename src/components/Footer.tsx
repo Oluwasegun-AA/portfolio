@@ -1,12 +1,8 @@
 import React, { ReactElement } from 'react';
 import githubBlack from '../assets/github_black.svg';
-import githubColored from '../assets/github_colored.svg';
 import instagramBlack from '../assets/instagram_black.svg';
-import instagramColored from '../assets/instagram_colored.svg';
 import linkedinBlack from '../assets/linkedin_black.svg';
-import linkedinColored from '../assets/linkedin_colored.svg';
 import twitterBlack from '../assets/twitter_black.svg';
-import twitterColored from '../assets/twitter_colored.svg';
 
 const Footer: React.FC = (): ReactElement => {
   return (
