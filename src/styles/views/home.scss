@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 100px);;
     text-align: center;
     justify-content: space-evenly;
 }
 
-.Info {
+.info {
     color: $whiteText;
 
     .name {
