@@ -3,7 +3,7 @@
 
 // Media query for mobile first layout
 @mixin tiny-screen {
-  @media (max-width: #{$xs_Mobile}) {
+  @media (min-width: #{$xs_Mobile}) {
     @content;
   }
 }

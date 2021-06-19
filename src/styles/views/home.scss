@@ -12,10 +12,12 @@
 
     .name {
         font-family: R-semiBold;
+        font-size: 38px;
     }
 
     .title {
         font-family: R-regular;
+        font-size: 14px;
         margin: 10px;
     }
 }
@@ -31,27 +33,27 @@
 
 @include mobile-screen {
     .title {
-        font-size: 22px;
+        font-size: 18px;
     }
     .name {
-       font-size: 60px;
+       font-size: 42px;
     }
   }
 
 @include tablet-screen {
     .title {
-        font-size: 25px;
+        font-size: 20px;
     }
     .name {
-        font-size: 60px;
+        font-size: 44px;
      }
   }
 
 @include desktop-screen {
     .title {
-        font-size: 25;
+        font-size: 22;
     }
     .name {
-        font-size: 60px;
+        font-size: 46px;
      }
   }
