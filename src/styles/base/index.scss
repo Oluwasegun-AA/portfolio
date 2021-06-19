@@ -12,7 +12,7 @@ body,
   min-height: max-content;
   background-color: $background;
   font-family: R-regular;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .main_container{
@@ -31,15 +31,19 @@ body,
     @include tiny-screen {
     width: $content_width;
     }
+
   @include mobile-screen {
   width: $content_width;  
   }
+
   @include tablet-screen {
   width: $content_width;  
   }
+
   @include desktop-screen {
   width: $content_width;  
   }
+
   @include large-desktop-screen {
   width: $content_width;  
   }
