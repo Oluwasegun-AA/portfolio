@@ -25,8 +25,7 @@ body,
   justify-content: center;
 
   .body_container{
-    // flex-grow: 1;
-    // height: max-content;
+    height: max-content;
 
     @include tiny-screen {
     width: $content_width;
