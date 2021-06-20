@@ -7,7 +7,7 @@ import twitterBlack from '../assets/twitter_black.svg';
 const Footer: React.FC = (): ReactElement => {
   return (
     <nav className="container footer">
-      <div className="centered-content footer_content">
+      <div className="centered_content footer_content">
         <a
           target="_blank"
           rel="noreferrer"

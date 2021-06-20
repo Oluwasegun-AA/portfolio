@@ -9,7 +9,7 @@ const ViewFrame: React.FC<IViewFrame> = ({
 }: IViewFrame): ReactElement => {
   return (
     <nav className={`${className} container nav`}>
-      <div className="centered-content" />
+      <div className="centered_content" />
     </nav>
   );
 };
