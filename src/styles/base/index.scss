@@ -6,23 +6,19 @@ html,
 body,
 #root,
 .routes {
-  min-width: 100%;
   margin: 0;
   padding: 0;
+  width: 100%;
   min-height: max-content;
   background-color: $background;
   font-family: R-regular;
-  overflow: hidden;
 }
 
 .main_container{
   width: 100%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   align-self: center;
   text-align: center;
-  justify-content: center;
 
   .body_container{
     height: max-content;
@@ -51,4 +47,35 @@ body,
 
 .info {
     height: max-content;
+}
+
+.link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+
+.flex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  &--row{
+  flex-direction: row;
+  }
+  &--column{
+  flex-direction: column;
+  }
+}
+
+.center {
+  margin: auto;
+}
+
+.body_container{
+  max-width: 100vw;
+  min-height: calc(100vh - 100px);
 }

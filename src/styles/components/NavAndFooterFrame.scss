@@ -21,7 +21,21 @@
 }
 
 .nav {
+  position: sticky;
+    top: 0;
+    z-index: 1;
     border-bottom: 1px solid #6e6c6c;
+    background-color: #1E201E;
+}
+
+.logo {
+    border-left: 2px solid #6e6c6c;
+    padding-left: 5px;
+}
+
+.footer{
+    margin-top: auto;
+    background-color: $background;
 }
 
 .footer_content,
@@ -81,7 +95,6 @@ a {
 }
 
 .say_hello{
-    border: 1px solid rgb(151, 148, 148);
-    border-radius: 4px;
     animation: shake 5s infinite forwards;
+    box-shadow: 0 4px 8px 0 rgba(253, 253, 253, 0.2), 0 6px 20px 0 rgba(44, 42, 42, 0.19);
 }

@@ -23,6 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "CI=true react-scripts test --colors --coverage",
     "eject": "react-scripts eject",
