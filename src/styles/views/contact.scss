@@ -33,6 +33,7 @@
 .body_container{
     width: 100vw;
     margin: auto;
+    min-height: calc(100vh - 250px);
 }
 
 [class$="_column_right"], [class$="_column_left"] {
