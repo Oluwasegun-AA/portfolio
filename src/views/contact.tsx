@@ -16,7 +16,10 @@ const Contact: React.FC = (): ReactElement => {
           <div className="section_column_center _centerPane">
             <div className="mail center">
               <input className="contact_email_input" />
-              <textarea className="contact_message_input" />
+              <textarea
+                placeholder="Drop me a message ..."
+                className="contact_message_input"
+              />
               <div className="mail_btn">
                 <Button className="standard-btn--white" onClick={() => ''}>
                   <img
