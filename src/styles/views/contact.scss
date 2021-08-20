@@ -1,0 +1,102 @@
+.mail{
+    border: 1px solid #6e6c6c;
+    border-radius: 4px;
+    height: max-content;
+    max-width: $content_width;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_email_input{
+    border: 1px solid #6e6c6c;
+    height: 40px;
+    background: #6e6c6c;
+}
+
+.contact_message_input {
+    border: 1px solid red;
+    height: 150px;
+    background: #6e6c6c;
+}
+
+.envelop_icon{
+    height: 30px;
+    width: 30px;
+}
+
+.mail_btn {
+    text-align: right;
+}
+
+.body_container{
+    width: 100vw;
+    margin: auto;
+    min-height: calc(100vh - 250px);
+}
+
+[class$="_column_right"], [class$="_column_left"] {
+    flex-grow: 1;
+}
+
+@include tiny-screen {
+    .title_description {
+        font-size: 20px;
+        color: rgb(255, 0, 255);
+    }
+    .title {
+       font-size: 44px;
+    }
+    .mail{
+        max-width: $content_width;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+}
+
+@include mobile-screen {
+    .title_description {
+        font-size: 22px;
+        color: red;
+    }
+    .title {
+       font-size: 46px;
+    }
+    .mail{
+        // width: calc(100vw/ 1.2);
+        max-width: $content_width;
+        min-width: 320px;
+    }
+  }
+
+@include tablet-screen {
+    .title_description {
+        font-size: 24px;
+        color: blue;
+    }
+    .title {
+        font-size: 18px;
+     }
+     .mail{
+        // width: calc(100vw/ 1.2);
+        max-width: $content_width;
+        min-width: 320px;
+    }
+  }
+
+@include desktop-screen {
+    .title_description {
+        font-size: 28;
+        color: rgb(0, 255, 34);
+    }
+    .title {
+        font-size: 50px;
+     }
+     .mail{
+         max-width: $content_width;
+         min-width: 220px;
+        //  width: calc(100vw/ 2);
+    }
+  }

@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react';
+import { Link } from 'react-router-dom';
 import dark_mode from '../assets/dark_mode.svg';
 
 const NavigationBar: React.FC = (): ReactElement => {
@@ -6,16 +7,28 @@ const NavigationBar: React.FC = (): ReactElement => {
     <nav className="container nav">
       <div className="centered_content nav_content">
         <div className="nav_centreLogo">
-          <div>Olúwáségun</div>
+          <div>
+            <Link className="link logo" to="/">
+              Olúwáségun
+            </Link>
+          </div>
         </div>
         <div className="nav_centreButtons">
           <img
             className="nav_contrastModeIcon"
             src={dark_mode}
-            alt="instagram"
+            alt="darkmode"
           />
-          <div>About Me</div>
-          <div className="say_hello">Say Hello</div>
+          <div>
+            <Link className="link" to="/aboutMe">
+              About Me
+            </Link>
+          </div>
+          <div className="say_hello btn--black link">
+            <Link className="link" to="/">
+              Say Hello
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

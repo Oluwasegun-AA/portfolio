@@ -1,14 +1,17 @@
-import React, { FC } from 'react';
+import React, { FC, JSXElementConstructor, ReactElement } from 'react';
 
 interface IButton {
   className: string;
-  value: string;
-  id: string;
+  value?: string | ReactElement<any, string | JSXElementConstructor<any>>;
   onClick: (event: React.MouseEvent<HTMLSpanElement, MouseEvent>) => void;
 }
 
-const Button: FC<IButton> = ({ className, onClick, value, id }: IButton) => (
-  <span className={className} onClick={onClick} id={id}>
+const Button: FC<IButton> = ({
+  className,
+  onClick,
+  value,
+}: IButton): ReactElement => (
+  <span className={className} onClick={onClick}>
     {value}
   </span>
 );
