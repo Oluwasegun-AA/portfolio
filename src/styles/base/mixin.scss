@@ -2,6 +2,13 @@
   =============== */
 
 // Media query for mobile first layout
+
+@mixin very-tiny-screen {
+  @media (max-width: #{$xs_Mobile}) {
+    @content;
+  }
+}
+
 @mixin tiny-screen {
   @media (min-width: #{$xs_Mobile}) {
     @content;
@@ -42,8 +49,7 @@
 
 @mixin btn-config-standard {
   border-radius: 3px;
-  min-width: 8em;
-  height: 1.3em;
+  min-width: 6em;
   display: flex;
   justify-content: center;
   align-items: center;

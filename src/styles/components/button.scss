@@ -24,24 +24,50 @@
   }
   
   .standard-btn {
-    &--white {
+    &--ash {
       @include btn-config-standard;
-      background-color: rgb(151, 148, 148);
-      // color: black;
+      background-color: rgb(78, 78, 78);
+      fill: rgb(180, 180, 180);
+      color: white;
   
       &:hover {
         opacity: 0.7;
+        background-color: white;
         cursor: pointer;
+        color: black;
+      }
+
+      &:hover svg{
+        fill: black
+      }
+    }
+
+    &--white {
+      @include btn-config-standard;
+      background-color: white;
+      fill: rgb(180, 180, 180);
+      color: black;
+  
+      &:hover {
+        opacity: 0.7;
+        background-color: black;
+        cursor: pointer;
+        color: white;
+      }
+
+      &:hover svg{
+        fill: black
       }
     }
   
     &--black {
       @include btn-config;
       border: 1px solid rgb(151, 148, 148);
+      background-color: black;
       color: white;
   
       &:hover {
-        background-color: rgb(151, 148, 148);
+        background-color: white;
         color: black;
         cursor: pointer;
       }

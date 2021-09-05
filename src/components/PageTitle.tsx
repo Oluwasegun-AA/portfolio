@@ -16,7 +16,7 @@ const PageTitle: React.FC<IPageTitle> = ({
     <div className={parentClass}>
       <section className="centered_content page_title flex--column">
         <div className="section_column_left" />
-        <div className="section_column_center">
+        <div className="section_column_center--pageTitle">
           <div>
             <div className="title">{titleText}</div>
             <div className="title_description">{descriptionText}</div>
