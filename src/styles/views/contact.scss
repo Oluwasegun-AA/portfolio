@@ -10,30 +10,90 @@
 }
 
 .contact_email_input{
-    border: 1px solid #6e6c6c;
-    height: 40px;
+    height: 20px;
+    color: white;
+    caret-color: white;
+    outline: none;
     background: #6e6c6c;
+    border-radius: 5px;
+    margin: 0px 0px 5px 0px;
+    &::-webkit-input-placeholder {
+        color: white;
+     }
+     
+     &::-moz-input-placeholder {
+        color: white;
+     }
+     
+     &:-moz-input-placeholder {
+        color: white;
+     }
+     
+     &:-ms-input-placeholder {
+        color: white;
+     }
+}
+
+textarea, input {
+    padding: 10px;
+}
+
+.send-mail {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact_message_input {
-    border: 1px solid red;
-    height: 150px;
+    height: 130px;
+    outline: none;
+    color: white;
+    caret-color: white;
     background: #6e6c6c;
+    border-radius: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin: 5px 0px 5px 0px;
+    &::-webkit-input-placeholder {
+       color: white;
+     }
+     
+     &::-moz-input-placeholder {
+       color: white;
+     }
+     
+     &:-moz-input-placeholder {
+       color: white;
+     }
+     
+     &:-ms-input-placeholder {
+       color: white;
+     }
 }
 
-.envelop_icon{
+.send-mail > svg {
     height: 30px;
     width: 30px;
+    margin-left: 5px;
 }
 
 .mail_btn {
-    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    left: 5px;
+    margin: 5px 0px 5px 0px;
+
+    .standard-btn--ash {
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+    }
 }
 
-.body_container{
+.body_container {
     width: 100vw;
     margin: auto;
-    min-height: calc(100vh - 250px);
 }
 
 [class$="_column_right"], [class$="_column_left"] {
@@ -41,13 +101,6 @@
 }
 
 @include tiny-screen {
-    .title_description {
-        font-size: 20px;
-        color: rgb(255, 0, 255);
-    }
-    .title {
-       font-size: 44px;
-    }
     .mail{
         max-width: $content_width;
         margin-top: 10px;
@@ -57,13 +110,6 @@
 }
 
 @include mobile-screen {
-    .title_description {
-        font-size: 22px;
-        color: red;
-    }
-    .title {
-       font-size: 46px;
-    }
     .mail{
         // width: calc(100vw/ 1.2);
         max-width: $content_width;
@@ -72,13 +118,6 @@
   }
 
 @include tablet-screen {
-    .title_description {
-        font-size: 24px;
-        color: blue;
-    }
-    .title {
-        font-size: 18px;
-     }
      .mail{
         // width: calc(100vw/ 1.2);
         max-width: $content_width;
@@ -87,13 +126,6 @@
   }
 
 @include desktop-screen {
-    .title_description {
-        font-size: 28;
-        color: rgb(0, 255, 34);
-    }
-    .title {
-        font-size: 50px;
-     }
      .mail{
          max-width: $content_width;
          min-width: 220px;

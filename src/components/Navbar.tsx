@@ -25,7 +25,7 @@ const NavigationBar: React.FC = (): ReactElement => {
             </Link>
           </div>
           <div className="say_hello btn--black link">
-            <Link className="link" to="/">
+            <Link className="link" to="/contact">
               Say Hello
             </Link>
           </div>

@@ -13,7 +13,6 @@ COMMON PAGE STYLES
 body{
 	margin:0px;
 	padding:0px;
-	overflow:hidden;
 	background: #F2F2F2;
 	height:100%;
 }
@@ -28,7 +27,6 @@ STYLES FOR ILLUSTRATION ELEMENTS
 }
 #content{
 	text-align:center;
-	margin-top:-327px;
 }
 #gears{
 	width:478px;
@@ -54,7 +52,7 @@ STYLES FOR ILLUSTRATION ELEMENTS
 #title{
 	vertical-align:middle;
 	color:#9EB7B5;
-	width:25%;
+	width:50%;
 	display:inline-block;
 }
 #title h1{
@@ -541,16 +539,29 @@ STYLES FOR ILLUSTRATION ELEMENTS
  }
 }
 
-
-@include tiny-screen {
-    .large-screen_404 {
+@include very-tiny-screen{
+	.large-screen_404 {
         display: none;
     }
     .small-screen_404 {
         display: block;
      }
     .page-title_404 {
-         display: block;
+         border: none;
+      }
+     #title{
+        width:90%;
+     }
+}
+
+@include tiny-screen {
+	.large-screen_404 {
+        display: none;
+    }
+    .small-screen_404 {
+        display: block;
+     }
+    .page-title_404 {
          border: none;
       }
      #title{
@@ -566,7 +577,6 @@ STYLES FOR ILLUSTRATION ELEMENTS
         display: block;
      }
     .page-title_404 {
-        display: block;
         border: none;
      }
      #title{
@@ -581,11 +591,8 @@ STYLES FOR ILLUSTRATION ELEMENTS
     .small-screen_404 {
         display: none;
      }
-    .page-title_404 {
-        display: none;
-     }
      #title{
-        width:25%;
+        width:40%;
      }
   }
 
@@ -596,10 +603,7 @@ STYLES FOR ILLUSTRATION ELEMENTS
     .small-screen_404 {
         display: none;
      }
-    .page-title_404 {
-        display: none;
-     }
      #title{
-        width:25%;
+        width:40%;
      }
   }

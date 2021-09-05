@@ -20,36 +20,6 @@
     min-height: calc(100vh - 100px);
 }
 
-.page_title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.page_title {
-    color: $whiteText;
-    text-align: left;
-
-    .title {
-        font-family: R-semiBold;
-        font-size: 42px;
-        margin: 5px;
-        padding: 5px;
-    }
-
-    .title_description {
-        font-family: R-regular;
-        font-size: 18px;
-        margin: 5px;
-        padding: 5px;
-    }
-
-    &_centerPane{
-        width: $content_width; 
-        text-align: left;
-    }
-}
-
 .section_container{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -70,9 +40,6 @@
 }
 
 @include tiny-screen {
-    .title {
-        font-size: 20px;
-    }
     .name {
        font-size: 44px;
     }
@@ -82,9 +49,6 @@
 }
 
 @include mobile-screen {
-    .title {
-        font-size: 22px;
-    }
     .name {
        font-size: 46px;
     }
@@ -94,9 +58,6 @@
   }
 
 @include tablet-screen {
-    .title {
-        font-size: 24px;
-    }
     .name {
         font-size: 48px;
      }
@@ -106,9 +67,6 @@
   }
 
 @include desktop-screen {
-    .title {
-        font-size: 28;
-    }
     .name {
         font-size: 50px;
      }
