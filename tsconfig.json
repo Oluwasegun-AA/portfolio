@@ -1,6 +1,14 @@
 {
   "compilerOptions": {
     "baseUrl": "./src",
+    "paths": {
+      "@mocks/*": [ "./__mocks__/*" ],
+      "@views/*": [ "./views/*" ],
+      "@components/*": [ "./components/*" ],
+      "@hooks/*": [ "./hooks/*" ],
+      "@assets/*": [ "./assets/*" ],
+      "@portfolio/*": [ "./*" ],
+    },
     "target": "es5",
     "lib": [
       "dom",
@@ -26,7 +34,10 @@
     "noImplicitAny": false,
     "noImplicitThis": true,
     "strictNullChecks": true,
-    "typeRoots": ["./src/@types", "./node_modules/@types"]
+    "typeRoots": [
+      "./src/@types",
+      "./node_modules/@types"
+    ]
   },
   "include": [
     "src"

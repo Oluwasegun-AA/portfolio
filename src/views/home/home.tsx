@@ -1,7 +1,7 @@
+import BodySubSection from '@components/body-section/BodySection';
+import Footer from '@components/footer/Footer';
+import NavigationBar from '@components/navbar/Navbar';
 import React, { ReactElement } from 'react';
-import NavigationBar from 'components/Navbar';
-import Footer from 'components/Footer';
-import BodySubSection from 'components/BodySecton';
 
 const Home: React.FC = (): ReactElement => {
   return (

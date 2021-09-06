@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { Link } from 'react-router-dom';
-import dark_mode from '../assets/dark_mode.svg';
+import dark_mode from '@assets/dark_mode.svg';
 
 const NavigationBar: React.FC = (): ReactElement => {
   return (

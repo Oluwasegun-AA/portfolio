@@ -1,8 +1,8 @@
+import Button from '@components/botton/Button';
+import Footer from '@components/footer/Footer';
+import NavigationBar from '@components/navbar/Navbar';
+import PageTitle from '@components/page-title/PageTitle';
 import React, { ReactElement } from 'react';
-import NavigationBar from 'components/Navbar';
-import Footer from 'components/Footer';
-import Button from 'components/Button';
-import PageTitle from 'components/PageTitle';
 
 const Contact: React.FC = (): ReactElement => {
   return (
