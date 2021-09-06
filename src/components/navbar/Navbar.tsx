@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { Link } from 'react-router-dom';
-import dark_mode from '../assets/dark_mode.svg';
+import { darkMode } from '../../assets';
 
 const NavigationBar: React.FC = (): ReactElement => {
   return (
@@ -14,11 +14,7 @@ const NavigationBar: React.FC = (): ReactElement => {
           </div>
         </div>
         <div className="nav_centreButtons">
-          <img
-            className="nav_contrastModeIcon"
-            src={dark_mode}
-            alt="darkmode"
-          />
+          <img className="nav_contrastModeIcon" src={darkMode} alt="darkmode" />
           <div>
             <Link className="link" to="/aboutMe">
               About Me

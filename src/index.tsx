@@ -8,10 +8,10 @@ import {
   from,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-import cache from 'apollo/cache';
 import reportWebVitals from './reportWebVitals';
 import Routes from './routes';
 import errorLink from './apollo/errorHandling';
+import cache from './apollo/cache';
 
 export const baseUrl =
   process.env.BACKEND_BASE_URL || 'https://backend_staging.herokuapp.com';

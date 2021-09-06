@@ -1,8 +1,10 @@
 import React, { ReactElement } from 'react';
-import githubBlack from '../assets/github_black.svg';
-import instagramBlack from '../assets/instagram_black.svg';
-import linkedinBlack from '../assets/linkedin_black.svg';
-import twitterBlack from '../assets/twitter_black.svg';
+import {
+  linkedinBlack,
+  twitterBlack,
+  instagramBlack,
+  githubBlack,
+} from '../../assets';
 
 const Footer: React.FC = (): ReactElement => {
   return (

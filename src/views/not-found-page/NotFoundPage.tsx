@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react';
-import NavigationBar from 'components/Navbar';
-import Footer from 'components/Footer';
-import BodySubSection from 'components/BodySecton';
+import { Footer } from '../../components';
+import BodySubSection from '../../components/body-section/BodySection';
+import NavigationBar from '../../components/navbar/Navbar';
 
-const ErrorPage: React.FC = (): ReactElement => {
+const NotFoundPage: React.FC = (): ReactElement => {
   return (
     <div className="main_container">
       <NavigationBar />
@@ -75,4 +75,4 @@ const ErrorPage: React.FC = (): ReactElement => {
   );
 };
 
-export default ErrorPage;
+export default NotFoundPage;
