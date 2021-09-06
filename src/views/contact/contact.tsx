@@ -1,8 +1,6 @@
-import Button from '@components/botton/Button';
-import Footer from '@components/footer/Footer';
-import NavigationBar from '@components/navbar/Navbar';
-import PageTitle from '@components/page-title/PageTitle';
 import React, { ReactElement } from 'react';
+import { PageTitle, Button, Footer } from '../../components';
+import NavigationBar from '../../components/navbar/Navbar';
 
 const Contact: React.FC = (): ReactElement => {
   return (
@@ -10,7 +8,7 @@ const Contact: React.FC = (): ReactElement => {
       <NavigationBar />
       <div className="page-body">
         <PageTitle
-          titleText="Yay! I'lld like to hear from you"
+          titleText="Yay! I'll like to hear from you"
           descriptionText="you can likewise reach me via hello@segunadepoju.com"
         />
         <div className="body_container">

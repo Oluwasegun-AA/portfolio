@@ -1,14 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "@mocks/*": [ "./__mocks__/*" ],
-      "@views/*": [ "./views/*" ],
-      "@components/*": [ "./components/*" ],
-      "@hooks/*": [ "./hooks/*" ],
-      "@assets/*": [ "./assets/*" ],
-      "@portfolio/*": [ "./*" ],
-    },
     "target": "es5",
     "lib": [
       "dom",

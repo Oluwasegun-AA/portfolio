@@ -1,5 +1,5 @@
 import { onError } from '@apollo/client/link/error';
-import { log } from 'utils/errorHandler';
+import { log } from '../utils/errorHandler';
 
 export default onError(({ networkError, graphQLErrors }) => {
   if (graphQLErrors)

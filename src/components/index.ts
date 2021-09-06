@@ -4,4 +4,4 @@ import NavBar from './navbar/Navbar';
 import PageTitle from './page-title/PageTitle';
 import BodySection from './body-section/BodySection';
 
-export default { Button, Footer, NavBar, PageTitle, BodySection };
+export { Button, Footer, NavBar, PageTitle, BodySection };

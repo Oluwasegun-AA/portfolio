@@ -1,5 +1,5 @@
 import Home from './home/home';
 import Contact from './contact/contact';
-import ErrorPage from './404/404';
+import NotFoundPage from './not-found-page/NotFoundPage';
 
-export default { ErrorPage, Contact, Home };
+export { NotFoundPage, Contact, Home };
