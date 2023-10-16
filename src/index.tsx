@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.scss';
 import {
@@ -42,7 +42,9 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <Routes />
+    <StrictMode>
+      <Routes />
+    </StrictMode>
   </ApolloProvider>,
   document.getElementById('root'),
 );
