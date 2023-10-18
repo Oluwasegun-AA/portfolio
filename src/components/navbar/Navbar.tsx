@@ -1,29 +1,35 @@
 import React, { ReactElement } from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { darkMode } from '../../assets';
 
 const NavigationBar: React.FC = (): ReactElement => {
+  const history = useHistory();
+
+  const navigateTo = (path: string) => {
+    history.push(path);
+  };
+
   return (
     <nav className="container nav">
       <div className="centered_content nav_content">
         <div className="nav_centreLogo">
           <div>
-            <Link className="link logo" to="/">
+            <span className="link logo" onClick={() => navigateTo('/')}>
               Olúwáségun
-            </Link>
+            </span>
           </div>
         </div>
         <div className="nav_centreButtons">
           <img className="nav_contrastModeIcon" src={darkMode} alt="darkmode" />
           <div>
-            <Link className="link" to="/aboutMe">
+            <span className="link" onClick={() => navigateTo('/aboutMe')}>
               About Me
-            </Link>
+            </span>
           </div>
           <div className="say_hello btn--black link">
-            <Link className="link" to="/contact">
+            <span className="link" onClick={() => navigateTo('/contact')}>
               Say Hello
-            </Link>
+            </span>
           </div>
         </div>
       </div>
