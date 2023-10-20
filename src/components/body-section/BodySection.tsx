@@ -1,9 +1,9 @@
 import React, { FC, JSXElementConstructor, ReactElement } from 'react';
 
 interface ISection {
-  leftPane?: ReactElement<any, string | JSXElementConstructor<any>>;
-  centerPane: ReactElement<any, string | JSXElementConstructor<any>>;
-  rightPane?: ReactElement<any, string | JSXElementConstructor<any>>;
+  leftPane?: ReactElement<string, string | JSXElementConstructor<string>>;
+  centerPane: ReactElement<string, string | JSXElementConstructor<string>>;
+  rightPane?: ReactElement<string, string | JSXElementConstructor<string>>;
   className?: string;
 }
 
