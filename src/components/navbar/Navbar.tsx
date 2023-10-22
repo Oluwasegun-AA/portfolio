@@ -7,6 +7,7 @@ const NavigationBar: React.FC = (): ReactElement => {
 
   const navigateTo = (path: string) => {
     history.push(path);
+    document.location.reload();
   };
 
   return (
