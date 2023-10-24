@@ -49,6 +49,11 @@
         ],
         "prettier/prettier": "error",
         // TODO: Revise, fix and turn on some of the rules
+        "jsx-a11y/anchor-is-valid": ["error", {
+          "components": ["Link"],
+          "specialLink": ["to"],
+          "aspects": ["invalidHref"]
+          }],
         "react/jsx-props-no-spreading": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "react/function-component-definition": "off",
