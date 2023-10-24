@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { ReactElement } from 'react';
 import {
   linkedinBlack,
@@ -17,20 +18,14 @@ const Footer: React.FC = (): ReactElement => {
         >
           <img src={linkedinBlack} alt="linkedIn" />
         </a>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://twitter.com/Oluwasegun_AA"
-        >
+        <a rel="noreferrer" href="#">
           <img src={twitterBlack} alt="twitter" />
         </a>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.instagram.com/oluwasegun_aa/"
-        >
+
+        <a rel="noreferrer" href="#">
           <img src={instagramBlack} alt="instagram" />
         </a>
+
         <a
           target="_blank"
           rel="noreferrer"
